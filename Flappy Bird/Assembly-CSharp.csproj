@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BackgroundMove.cs" />
+    <Compile Include="Assets\Scripts\BirdControler.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
