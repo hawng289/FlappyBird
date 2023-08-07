@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,23 +6,33 @@ using UnityEngine;
 public class WallMove : MonoBehaviour
 {
     public float moveSpeed;
-    public float moveRange;
     private GameObject obj;
-    private Vector3 oldPosition;
+    private float oldPosition;
+    public float minY;
+    public float maxY;
     // Start is called before the first frame update
     void Start()
     {
         obj = gameObject;
-        oldPosition = obj.transform.position;
+        oldPosition = 1f;
+        minY = 0.7f;
+        maxY = 1.2f;
+
     }
 
     // Update is called once per frame
     void Update()
     {
         obj.transform.Translate(-1 * Time.deltaTime * moveSpeed, 0, 0);
-        if (Vector3.Distance(oldPosition, obj.transform.position) > moveRange)
-        {
-            obj.transform.position = oldPosition;
-        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+
+    {
+        float a = Random.Range(minY, maxY);
+        obj.transform.localPosition = new Vector3(oldPosition, a, 0);
+        Debug.Log("thay doi " + obj.name);
+        Debug.Log("vi tri" + obj.transform.position.ToString());
     }
 }
+
