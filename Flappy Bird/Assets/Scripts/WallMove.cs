@@ -29,10 +29,11 @@ public class WallMove : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
 
     {
-        float a = Random.Range(minY, maxY);
-        obj.transform.localPosition = new Vector3(oldPosition, a, 0);
-        Debug.Log("thay doi " + obj.name);
-        Debug.Log("vi tri" + obj.transform.position.ToString());
+        if (collision.gameObject.tag.Equals("Reset"))
+        {
+            obj.transform.localPosition = new Vector3(oldPosition, Random.Range(minY, maxY), 0);
+        }
+       
     }
 }
 
