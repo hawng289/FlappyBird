@@ -20,8 +20,7 @@ public class GameController : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
 
             {
-                Debug.Log("load lai");
-                // Load lai game
+              
                 SceneManager.LoadScene(0);
             }
         } else
