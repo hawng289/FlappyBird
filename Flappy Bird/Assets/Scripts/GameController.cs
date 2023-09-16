@@ -46,9 +46,9 @@ public class GameController : MonoBehaviour
     public void EndGame()
     {
         isEndGame = true;
-        Time.timeScale = 0.0f;
         endGamePanel.SetActive(true);
         endGamePointText.text = "Điểm của bạn: " + gamePoint;
+        Time.timeScale = 0.0f;
 
     }
 

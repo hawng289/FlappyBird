@@ -8,6 +8,11 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
+	"picker_window_position_offset.768FEAAC" = "265.3333;-14.66667;320;550"
+	"picker_search_text.768FEAAC" = "ani"
+	"last_search.768FEAAC" = "ani"
+	"OpenInspectorPreview.768FEAAC" = "0"
+	"currentGroup.768FEAAC" = "all"
 }
 providers = {
 	performance = {
