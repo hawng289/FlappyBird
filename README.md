@@ -2,5 +2,5 @@
 - Assets được lấy từ https://github.com/samuelcust/flappy-bird-assets //
 - Dự án cá nhân
 # Video demo
-https://github.com/hawng289/FlappyBird/assets/114472721/2f1b9c7c-b31f-4b13-9090-7473b38ed387
+https://github.com/hawng289/FlappyBird/assets/114472721/7ea0a720-c536-4234-baaf-756dc43f935b
 
