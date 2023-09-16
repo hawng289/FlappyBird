@@ -15,9 +15,7 @@ public class WallMove : MonoBehaviour
     {
         obj = gameObject;
         oldPosition = 1f;
-        minY = 0.7f;
-        maxY = 1.2f;
-
+        
     }
 
     // Update is called once per frame

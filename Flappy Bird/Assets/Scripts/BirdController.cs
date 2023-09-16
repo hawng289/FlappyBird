@@ -30,7 +30,7 @@ public class BirdController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !gameController.GetComponent<GameController>().isEnd())
         {
           
             audioSource.Play();
@@ -47,6 +47,10 @@ public class BirdController : MonoBehaviour
         gameController.GetComponent<GameController>().EndGame();
     }
 
-  
-    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        gameController.GetComponent<GameController>().getPoint();
+    }
+
+
 }
